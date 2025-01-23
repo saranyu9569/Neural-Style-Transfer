@@ -17,13 +17,13 @@ pip install tensorflow tensorflow-hub matplotlib opencv-python numpy
 ```
 
 ## How It Works
-Neural Style Transfer combines the content of one image (content image) with the artistic style of another image (style image) using a deep learning model from TensorFlow Hub.
+Neural Style Transfer combines the original of one image (original image) with the artistic style of another image (style image) using a deep learning model from TensorFlow Hub.
 
 ## Example
 In this example, we transfer the style of Van Gogh's "Starry Night" to an image of Wat Arun temple in Bangkok.
 
 ### Input Images
-1. Content Image: Wat Arun Temple
+1. Original Image: Wat Arun Temple
 ![Wat Arun]('WatArun.jpg')
 
 2. Style Image: Starry Night by Van Gogh
@@ -36,7 +36,7 @@ In this example, we transfer the style of Van Gogh's "Starry Night" to an image 
 ![Comparison Result]('comparison_output.jpg')
 
 ## Usage
-1. Place your content and style images in the same directory
+1. Place your original and style images in the same directory
 2. Update the file paths in `main()` function
 3. Run the script
 
@@ -52,7 +52,7 @@ python main.py
 
 ## Output
 The script generates two output files:
-- `comparison_output.jpg`: Side-by-side comparison of content and stylized images
+- `comparison_output.jpg`: Side-by-side comparison of original and stylized images
 - `output.jpg`: Final stylized image
 
 ## Model
