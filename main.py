@@ -25,7 +25,7 @@ def stylize_image(content_image, style_image):
 def show_OutputImage(content_image, stylized_image):
     fig, axes = plt.subplots(1, 2, figsize=(10, 5))
     axes[0].imshow(np.squeeze(content_image))
-    axes[0].set_title('Content Image')
+    axes[0].set_title('Original Image')
     axes[0].axis('off')
     
     axes[1].imshow(np.squeeze(stylized_image))
@@ -37,11 +37,11 @@ def show_OutputImage(content_image, stylized_image):
     cv2.imwrite('output.jpg', cv2.cvtColor(np.squeeze(stylized_image)*255, cv2.COLOR_BGR2RGB))
 
 def main():
-    content_image = load_image('WatArun.jpg')       
+    original_image = load_image('WatArun.jpg')       
     style_image = load_image('StarryNight.jpg')
-    show_InputImage(content_image, style_image)
-    stylized_image = stylize_image(content_image, style_image)
-    show_OutputImage(content_image, stylized_image)
+    show_InputImage(original_image, style_image)
+    stylized_image = stylize_image(original_image, style_image)
+    show_OutputImage(original_image, stylized_image)
 
 if __name__ == "__main__":
     main()
