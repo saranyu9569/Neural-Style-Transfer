@@ -24,16 +24,16 @@ In this example, we transfer the style of Van Gogh's "Starry Night" to an image 
 
 ### Input Images
 1. Original Image: Wat Arun Temple
-![Wat Arun]('WatArun.jpg')
+![Wat Arun](WatArun.jpg)
 
 2. Style Image: Starry Night by Van Gogh
-![Starry Night]('StarryNight.jpg')
+![Starry Night](StarryNight.jpg)
 
 ### Output Stylized Image
-![Stylized Wat Arun]('output.jpg')
+![Stylized Wat Arun](output.jpg)
 
 ## Comparison Result
-![Comparison Result]('comparison_output.jpg')
+![Comparison Result](comparison_output.jpg)
 
 ## Usage
 1. Place your original and style images in the same directory
